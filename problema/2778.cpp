@@ -1,0 +1,1 @@
+/* cNtnH8sr4 ily traian um8Gzh52H */ #include <bits/stdc++.h>/* cNtnH8sr4 ily traian um8Gzh52H */ /* cNtnH8sr4 ily traian um8Gzh52H */ void next_perm(int n, int p[])/* cNtnH8sr4 ily traian um8Gzh52H */ {/* cNtnH8sr4 ily traian um8Gzh52H */     next_permutation(p + 1 , p + n + 1);/* cNtnH8sr4 ily traian um8Gzh52H */ }

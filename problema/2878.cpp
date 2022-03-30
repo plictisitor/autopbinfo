@@ -1,0 +1,1 @@
+/* kA9IcRbHX ily traian 2UFlENHJ4 */ #include <bits/stdc++.h>/* kA9IcRbHX ily traian 2UFlENHJ4 */ /* kA9IcRbHX ily traian 2UFlENHJ4 */ void prev_perm(int n, int P[])/* kA9IcRbHX ily traian 2UFlENHJ4 */ {/* kA9IcRbHX ily traian 2UFlENHJ4 */     prev_permutation(P + 1 , P + n + 1);/* kA9IcRbHX ily traian 2UFlENHJ4 */ }

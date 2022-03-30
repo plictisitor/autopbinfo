@@ -1,0 +1,1 @@
+/* Da8Zl5xHk ily traian z4jUbUZGz */ #include <bits/stdc++.h>/* Da8Zl5xHk ily traian z4jUbUZGz */ void ordonare(int a[] , int n , int st , int dr)/* Da8Zl5xHk ily traian z4jUbUZGz */ {/* Da8Zl5xHk ily traian z4jUbUZGz */     sort(a+st , a+dr+1);/* Da8Zl5xHk ily traian z4jUbUZGz */ }

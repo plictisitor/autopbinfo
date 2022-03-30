@@ -1,0 +1,1 @@
+/* wlzMLCle4 ily traian sdwC2Ly9D */ #include <bits/stdc++.h>/* wlzMLCle4 ily traian sdwC2Ly9D */ using namespace std;/* wlzMLCle4 ily traian sdwC2Ly9D */ int main()/* wlzMLCle4 ily traian sdwC2Ly9D */ {/* wlzMLCle4 ily traian sdwC2Ly9D */     cout<<412345678;/* wlzMLCle4 ily traian sdwC2Ly9D */     return 0;/* wlzMLCle4 ily traian sdwC2Ly9D */ }
