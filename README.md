@@ -7,7 +7,7 @@
 - login to your pbinfo account
 - insert the userscript located at [userscript.js](/userscript.js)
 - if u use firefox, go to about:config and activate `dom.events.testing.asyncClipboard`
-- run automate.py
+- run [automate.py](/automate.py) (NOT MAIN.PY! thats used for scraping the problems...)
 - place your cursor somewhere in the browser so that clicking does nothing
 - do not move and wait a lot
 - wait a lil more
@@ -25,6 +25,7 @@
 ### libraries used
 
 - pyautogui (for automating keyboard & mouse)
+- beautifulsoup4 (parsing html)
 - requests (for making http requests (duh))
 - pyperclip (for using ur clipboard)
 
