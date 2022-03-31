@@ -22,7 +22,7 @@ def get_clipboard():
     return pyperclip.paste()
 
 counter = 1
-skipto = 0 # 237
+skipto = 0 # 442
 
 for file in os.listdir("./probleme _ no bits/"): # for each file in the folder
     copied = copy_file("./probleme _ no bits/" + file) # copy to clipboard
@@ -33,22 +33,26 @@ for file in os.listdir("./probleme _ no bits/"): # for each file in the folder
         counter += 1
         continue
 
+    if len(copied) > 10000:
+        # prevent using long source code
+        copied = copied.replace(" ily traian ","")
+
     # open the browser and paste the code (using the userscript)
     time.sleep(0.2)
     url = "https://www.pbinfo.ro/?pagina=probleme&id={}".format(problem_id)
     webbrowser.open(url, new=0, autoraise=True)
 
-    time.sleep(2) # wait for page to load (2 seconds)
+    time.sleep(3) # wait for page to load (2 seconds)
     pyautogui.click()    
 
     while get_clipboard() == copied:
-        time.sleep(1) # wait till program is executed
+        time.sleep(0.1) # wait till program is compiled
     
     print(chr(7), end=">") # bell
     print("--> execution: {}".format(get_clipboard())) # print execution details
 
     # delay so we dont overload the server with requests
-    time.sleep(9)
+    time.sleep(4)
 
     # closes the tab
     pyautogui.keyDown('ctrl')
