@@ -22,7 +22,7 @@ def get_clipboard():
     return pyperclip.paste()
 
 counter = 1
-skipto = 0 # 442
+skipto = 870
 
 for file in os.listdir("./probleme _ no bits/"): # for each file in the folder
     copied = copy_file("./probleme _ no bits/" + file) # copy to clipboard
@@ -52,7 +52,7 @@ for file in os.listdir("./probleme _ no bits/"): # for each file in the folder
     print("--> execution: {}".format(get_clipboard())) # print execution details
 
     # delay so we dont overload the server with requests
-    time.sleep(4)
+    time.sleep(6)
 
     # closes the tab
     pyautogui.keyDown('ctrl')

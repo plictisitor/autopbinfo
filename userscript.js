@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 // activate dom.events.testing.asyncClipboard for Firefox
+// also the other things related to clipboard
 
 // beep if execution ended
 function beep() {
@@ -17,7 +18,7 @@ function beep() {
     snd.play();
 }
 
-// copy the execution details to clipboard 
+// copy the execution details to clipboard
 function copyExecutionToClipboard() {
     var copyText = document.getElementsByClassName("padding10 text-center lead roundbox")[0].innerText;
     navigator.clipboard.writeText(copyText).then(() => {
@@ -47,4 +48,5 @@ $(document).ready(function() {
 // check every 5 seconds for execution details
 let pointsInterval = setInterval(() => {
     checkPoints()
+    if (document.body.innerHTML.split("Mai așteaptă! Ai trimis").length >= 3) window.location.reload()
 }, 5000);
