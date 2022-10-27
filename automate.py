@@ -22,7 +22,7 @@ def get_clipboard():
     return pyperclip.paste()
 
 counter = 1
-skipto = 870
+skipto = 1
 
 for file in os.listdir("./probleme _ no bits/"): # for each file in the folder
     copied = copy_file("./probleme _ no bits/" + file) # copy to clipboard
